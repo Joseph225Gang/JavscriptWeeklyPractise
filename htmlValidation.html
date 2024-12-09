@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input
+            name="example"
+            placeholder="..." onchange="validate(event)"/>
+        <script>
+            function validate() {
+                console.log(event);
+                const input = event.currentTarget;
+                if (input.value === "") {
+                    input.setCustomValidity("Custom message: input is empty");
+                } else {
+                    input.setCustomValidity("");
+                }
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            let score = 0;
+            score ??= 100;    // Keeps 0
+            console.log(score);
+
+            let tag = '';
+            tag ??= 'default'; // Keeps empty string
+            console.log(tag)
+
+            let active = false;
+            active ??= true;   // Keeps false
+            console.log(active);
+
+            let user = {
+                name : null
+            };
+            user.name ??= 'Anonymous';
+            console.log(user.name);
+        </script>
+    </body>
+</html>
